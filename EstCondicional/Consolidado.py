@@ -139,21 +139,21 @@ def ejercicio_38 ():
     sueldo=float(input("Ingrese el sueldo reciente:"))
     #Proceso y Datos de Salida
     if anhoAnti>2 and anhoAnti<5:
-    bonoAnti=sueldo*0.20
+     bonoAnti=sueldo*0.20
     elif anhoAnti>=5:
-    bonoAnti=sueldo*0.30
+     bonoAnti=sueldo*0.30
 
     if sueldo>3500:
-    bonoSueldo=sueldo*0.10
+     bonoSueldo=sueldo*0.10
     elif sueldo>=1000 and sueldo<=3500:
-    bonoSueldo=sueldo*0.15
+     bonoSueldo=sueldo*0.15
     else:
-    bonoSueldo=sueldo*0.25
+     bonoSueldo=sueldo*0.25
 
     if bonoAnti>bonoSueldo:
-    bonoMayor=bonoAnti
+     bonoMayor=bonoAnti
     else:
-    bonoMayor=bonoSueldo
+     bonoMayor=bonoSueldo
     #Datos de Salida  
     print(f"El Bono que corresponde es: {bonoMayor}") 
 def ejercicio_39 ():
