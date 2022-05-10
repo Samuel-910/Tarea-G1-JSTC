@@ -1,3 +1,4 @@
+package EstCondicional;
 import java.util.Scanner;
 
 /**
@@ -20,7 +21,7 @@ public class Java {
     public static void ejercicio31(){
 
        int edad;
-       String calle;
+       String str;
        //datos de entrada
        System.out.print("Ingrese su edad:");
        edad=teclado.nextInt();
