@@ -20,16 +20,15 @@ public class Java {
     public static void ejercicio31() {
 
        int edad;
-       String str;
        //datos de entrada
        System.out.print("Ingrese su edad:");
        edad=teclado.nextInt();
        // proceso y datos de salida
        if (edad>18) {
-           System.out.println(" Puede votar porque su edad es"+edad);
+            System.out.println(" Puede votar porque su edad es"+edad);
            
        } else {
-        System.out.println(" Ustede No puede votar porque su edad es"+edad);
+            System.out.println(" Ustede No puede votar porque su edad es"+edad);
            
        }
        
