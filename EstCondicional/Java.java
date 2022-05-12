@@ -8,7 +8,7 @@ public class Java {
 
     static Scanner teclado=new Scanner(System.in); 
 
-    public static void ejercicio1(){
+    public static void ejercicio1() {
 
         int m=2;
         int a=5;
@@ -17,8 +17,7 @@ public class Java {
         multi= m*a;
         System.out.println(" me la pelas"+multi);
     }
-
-    public static void ejercicio31(){
+    public static void ejercicio31() {
 
        int edad;
        String str;
@@ -35,7 +34,6 @@ public class Java {
        }
        
     }
-
     public static void ejercicio316() {
 
         int puntos;
@@ -68,7 +66,6 @@ public class Java {
         System.out.println("El bono que obtuvo el profesor es:"+bono);
         
     }
-
     public static void ejercicio32() {
         
         double pagohora;
@@ -99,7 +96,6 @@ public class Java {
         System.out.println("El sueldo del trabajador es : "+sueldomensual);
 
     }
-
     public static void ejercicio35() {
 
         //declarar variables
@@ -143,7 +139,6 @@ public class Java {
         // datos de salida 
         System.out.println("la persona con menor edad es: "+menoredad+" y se llama "+menorpersona);
     }
-
     public static void ejercicio38() {
         // declarar variables
 
@@ -194,8 +189,6 @@ public class Java {
         System.out.println("El Bono que corresponde es: "+bonoMayor);
     
     }
-
-
     public static void main(String[] args) {
         //ejercicio31();
 
