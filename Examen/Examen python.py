@@ -1,4 +1,4 @@
-def ejercicio1 ():
+def ejercicio1JSTC ():
     #Definir variables
     exCon:float()
     e:float()
@@ -29,7 +29,7 @@ def ejercicio1 ():
         mensaje=("Su nivel es 1, por ende no obtiene vacante")
     #Datos de salida
     print(mensaje)
-def ejercicio2 ():
+def ejercicio2JSTC ():
     #Definir variables
     precio:float()
     igv:float()
@@ -54,7 +54,7 @@ def ejercicio2 ():
     print(f"El IGV total es: {igv}")
     print(f"El descuento total es: {descuento}")
     print(f"El total a pagar es: {preFi}")
-def ejercicio3 ():
+def ejercicio3JSTC ():
     #Definir variables
     num1:float()
     num2:float()
@@ -88,7 +88,7 @@ def ejercicio3 ():
         total=num1-num1
     #Datos de salida
     print(f"El resultado es {total}")
-def ejercicio4 ():
+def ejercicio4JSTC ():
     #Definir variables
     años:float()
     genero:str()
@@ -108,7 +108,7 @@ def ejercicio4 ():
         mensaje=("Su vacuna es de tipo A")
     #Datos de salida
     print(mensaje)
-def ejercicio5 ():
+def ejercicio5JSTC ():
     #Definir variables
     num=float()
     #Datos de entrada
