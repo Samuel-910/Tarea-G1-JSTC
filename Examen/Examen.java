@@ -63,27 +63,26 @@ public class Examen {
 }
     public static void pregunta3JSTC() {
         //Definir variables
-       double num1,num2,total;
-       String signo;
+       double num1,num2,total,signo;
        //Datos de entrada
        System.out.println("Ingrese el primer numero: ");
        num1=lt.nextDouble();
        System.out.println("Ingrese el segundo numero: ");
        num2=lt.nextDouble();
-       System.out.println(" + = suma \n - = resta \n / = divicion \n * = multiplicacion \n ^ = potencia \n R = raiz \n % = modulo de 2 \n Ingrese el signo: ");
-       signo=lt.next();
+       System.out.println(" 1 = (+ = suma) \n2 = (- = resta) \n3 = (/ = divicion) \n4 (* = multiplicacion) \n5 (^ = potencia) \n6 (R = raiz) \n7 (% = modulo de 2) \n Ingrese el signo: ");
+       signo=lt.nextDouble();
        //Proceso
-       if (signo=="+") {
+       if (signo==1) {
         total=num1+num2;
-       } else if(signo=="-"){
+       } else if(signo==2){
         total=num1-num2;
-       }else if(signo=="/"){
+       }else if(signo==3){
         total=num1/num2;
-       }else if (signo=="*") {
+       }else if (signo==4) {
         total=num1*num2;
-       }else if (signo=="^") {
+       }else if (signo==5) {
         total=Math.pow(num1,num2);
-       }else if (signo=="R") {
+       }else if (signo==6) {
         total=Math.pow(num1,0.5);
        }else{
         total=num1%num2;
