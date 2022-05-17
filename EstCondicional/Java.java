@@ -27,7 +27,7 @@ public class Java {
        if (edad>18) {
             System.out.println(" Puede votar porque su edad es"+edad);
            
-       } else {
+       }else {
             System.out.println(" Ustede No puede votar porque su edad es"+edad);
            
        }
