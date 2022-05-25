@@ -2,6 +2,8 @@ package Trabajo4;
 
 import java.util.Scanner;
 
+import EstRepetitiva.Ejervarios;
+
 public class Tareaprograsi {
     static Scanner lt=new Scanner(System.in);
     public static void ejercicio41() {
@@ -215,10 +217,84 @@ public class Tareaprograsi {
         System.out.println("El promedio de toda la escuela es: "+(total/alumnos)+" años");
     }
     public static void ejercicio410prof() {
-        
+        //Ejervarios();
     }
-
-
+    public static void ejercicio411() {
+         //Definir Variables
+         int cantidad;
+         double tipo, total=0;
+         String continuar="S";
+         //Datos de entrada y proceso
+         while (continuar.equals("S")) {
+             System.out.println("Elige el tipo de billete o moneda: \nBilletes \n1.- 200 \n2.- 100 \n3.- 50 \n4.- 20 \n5.- 10 \nMonedas \n6.- 5 \n7.- 2 \n8.- 1 \n9.- 0.50 \n10.- 0.20 \n11.- 0.10");
+             tipo=lt.nextDouble();
+             System.out.println("Cuanto es la cantidad de ese tipo: ");
+             cantidad=lt.nextInt();
+             if (tipo==1) {
+                 total=total+(cantidad*200);
+             } else if (tipo==2) {
+                 total=total+(cantidad*100);
+             }else if (tipo==3) {
+                 total=total+(cantidad*50);
+             }else if (tipo==4) {
+                 total=total+(cantidad*20);
+             }else if (tipo==5) {
+                 total=total+(cantidad*10);
+             }else if (tipo==6) {
+                 total=total+(cantidad*5);
+             }else if (tipo==7) {
+                 total=total+(cantidad*2);
+             }else if (tipo==8) {
+                 total=total+(cantidad*1);
+             }else if (tipo==9) {
+                 total=total+(cantidad*0.5);
+             }else if (tipo==10) {
+                 total=total+(cantidad*0.2);
+             }else{
+                 total=total+(cantidad*0.1);
+             }
+             System.out.println("Tiene mas dinero?:\nS=Si\tN=No");
+             continuar=lt.next().toUpperCase().equals("S")?"S":"N";
+         }
+         //Datos de salida
+         System.out.println("El dinero total es: "+total);
+    }
+    public static void ejercicio412() {
+        //Definir variables
+        int n,venta;
+        double a=0,b=0,c=0,total=0,total1=0,total2=0,total3=0;
+        //datos de entrada
+        System.out.println("Ingresa el numero de ventas: ");
+        n=lt.nextInt();
+        while (n>0) {
+            System.out.println("Ingresa el monto de la venta "+n);
+            venta=lt.nextInt();
+            if (venta>=20000){
+			    a = a + 1;
+			    total1 = total1+venta;
+            }else if (venta>=10000 && venta<20000){
+				b = b + 1;
+				total2 = total2 + venta;
+            }else{
+				c = c + 1;
+				total3 = total3 + venta;
+            }
+			total = total + venta;
+		    n = n - 1;
+       }
+        System.out.println("El numero de ventas mayores a $20,000 es: "+a);
+        System.out.println("El total de las ventas mayores a $20,000 es: "+total1);
+	    System.out.println("El numero de ventas mayores a $10,000 y menores a $20,000 es: "+b);
+	    System.out.println("El total de las ventas mayores a $10,000 y menores a $20,000 es: "+total2);
+	    System.out.println("El numero de ventas menores a $10,000 es: "+c);
+	    System.out.println("El total de las ventas menores a $10,000: "+total3);
+	    System.out.println("El monto total de la ventas es: $"+total);
+    }
+    
+    
+    
+    
+    
     public static void main(String[] args) {
         ejercicio46();
     }
