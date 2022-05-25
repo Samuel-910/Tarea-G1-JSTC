@@ -19,12 +19,12 @@ public class Ejercicio {
                 suma=suma+edad;
             }
             System.out.println("El promedio del salon "+salones+" es: "+(suma/n)+" años");
-		    total = total + suma;
             alumnos = alumnos + n;
+            total = total + suma;
 	        salones = salones - 1;
-            
+            suma=suma*0;
         }
-    System.out.println("El promedio de toda la escuela es: "+(total/alumnos)+" años");
+        System.out.println("El promedio de toda la escuela es: "+(total/alumnos)+" años");
     }
     public static void main(String[] args) {
         ejercicio();
