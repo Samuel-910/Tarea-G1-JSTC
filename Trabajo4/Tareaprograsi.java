@@ -290,7 +290,9 @@ public class Tareaprograsi {
 	    System.out.println("El total de las ventas menores a $10,000: "+total3);
 	    System.out.println("El monto total de la ventas es: $"+total);
     }
-    
+    public static void ejercicio413() {
+        
+    }
     
     
     
