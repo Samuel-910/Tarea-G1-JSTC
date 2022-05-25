@@ -5,30 +5,26 @@ import java.util.Scanner;
 public class Ejercicio {
     static Scanner lt=new Scanner(System.in);
     public static void ejercicio() {
-        //Definir variables
-        int i=0,n,tarjeta,hamburguesa;
-        double total=0;
+        //Definir datos
+        int n,salones,edad,suma=0,total=0,alumnos=0;
         //Datos de entrada
-        System.out.println("Sencillo(1) \nDoble(2) \nTriple(3)");
-        while (i<3) {
-            hamburguesa=i+1;
-            System.out.println("Ingrese la cantidad de hamburguesas del tipo "+(i+1)+":");
+        System.out.println("Ingrese la cantidad de salones: ");
+        salones=lt.nextInt();
+        while (salones>0) {
+            System.out.println("Ingrese la cantidad de alumnos: ");
             n=lt.nextInt();
-            switch (hamburguesa) {
-                case 1:total=total+10*n; break;
-                case 2:total=total+12*n; break;
-                case 3:total=total+14*n; break;
-                default: break;
+            for (int i = 0; i < n; i++) {
+                System.out.println("Ingrese la edad del alumno: "+(i+1));
+                edad=lt.nextInt(); 
+                suma=suma+edad;
             }
-            i++;
+            System.out.println("El promedio del salon "+salones+" es: "+(suma/n)+" años");
+		    total = total + suma;
+            alumnos = alumnos + n;
+	        salones = salones - 1;
+            
         }
-        System.out.println("Elige el tipo de pago: \n1.- Efectivo \n2.-Trajeta de credito");
-        tarjeta=lt.nextInt();
-        switch (tarjeta) {
-            case 1:System.out.println("El total a pagar es de: "+total+" pesos"); break;
-		    case 2:total=total+(total*0.05); System.out.println("El total a pagar es de: "+total+" pesos"); break;
-            default: break;
-        }
+    System.out.println("El promedio de toda la escuela es: "+(total/alumnos)+" años");
     }
     public static void main(String[] args) {
         ejercicio();
