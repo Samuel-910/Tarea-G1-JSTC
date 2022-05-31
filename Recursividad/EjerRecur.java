@@ -29,7 +29,8 @@ public class EjerRecur {
         } else { 
             return base * potencia(base, exponente - 1);
         }
- 
+
+
     }
     
     public static void main(String[] args) {
