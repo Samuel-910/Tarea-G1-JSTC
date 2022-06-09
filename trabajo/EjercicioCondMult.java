@@ -24,7 +24,7 @@ public class EjercicioCondMult {
 
     public static void main(String[] args) {
         EjercicioCondMult obj=new EjercicioCondMult();
-        static Scanner lt=new Scanner(System.in);
+        Scanner lt=new Scanner(System.in);
         System.out.println("Ingrese el numero de algoritmo:\n1=profesor\n2=Estudiante"+
         "\n3=MaquinaPC\n4=Proyector");
         int opcionMet=lt.nextInt();
