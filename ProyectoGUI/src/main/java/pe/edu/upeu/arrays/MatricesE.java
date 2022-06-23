@@ -20,9 +20,21 @@ public class MatricesE {
             
         }
     }
+    public void matricesX() {
 
+        int notas[][]={{20,18},{16,10}}; 
+        notas[1][1]=15;
+        for (int f = 0; f < notas.length; f++) {
+            for (int c = 0; c < notas[0].length; c++) {
+                System.out.print(notas[f][c]+"\t");
+        
+            }
+            
+        }
+    }
     public static void main(String[] args) {
-        new MatricesE().matricesFBasico();
+        //new MatricesE().matricesFBasico();
+        new MatricesE().matricesX();
     }
 
 

@@ -53,7 +53,7 @@ public class VectoresE {
     }
 
     public static void main(String[] args) {
-        VectoresEjemplo objx=new VectoresEjemplo();
+        VectoresE objx=new VectoresE();
         //objx.vectoresX();
         objx.vectorObjetos();
        //new VectoresEjemplo().vectoresX();
