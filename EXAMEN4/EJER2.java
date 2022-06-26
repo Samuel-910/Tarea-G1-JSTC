@@ -6,8 +6,14 @@ public class EJER2 { // Clase principal
     static Scanner lt = new Scanner(System.in);
 
     public static void numperfecto() {
-        int i, j, suma;
-        for (i = 1; i >= 1; i++) {
+        System.out.println("---------------->Ejercicio4<----------------");
+
+        int i, j, suma, sec = 0;
+        System.out.println("Ingrese cuantos numeros perfectos desea ver (dentro del rango): ");
+        int canti = lt.nextInt();
+        System.out.println("→→→→→→→→☻Los numero perfectos son:☻←←←←←←←→");
+        for (i = 1; i > 0; i++) {
+
             suma = 0;
             for (j = 1; j < i; j++) {
                 if (i % j == 0) {
@@ -15,32 +21,18 @@ public class EJER2 { // Clase principal
                 }
             }
             if (i == suma) {
-                System.out.println(i);
-            }
-        }
-    }
 
-    public static void imprimir() {
-        int n;
-        System.out.print("Introduce la Cantidad de numeros perfectos: ");
-        n = lt.nextInt();
-        while (n > 0) {
-            for (int i = 1; i >= 1; i++) {
-                int suma = 0;
-                for (int j = 1; j < i; j++) {
-                    if (i % j == 0) {
-                        suma = suma + j;
-                    }
-                }
-                if (i == suma) {
+                sec++;
+                if (sec <= canti) {
                     System.out.println(i);
+                } else {
+                    break;
                 }
             }
-            n--;
         }
     }
 
     public static void main(String[] args) {
-        imprimir();
+        numperfecto();
     }
 }
