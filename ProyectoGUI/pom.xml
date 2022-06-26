@@ -40,7 +40,7 @@
 <configuration> 
 <archive>
 <manifest>
-<mainClass>pe.edu.upeu.swingjava.ExamenJava</mainClass> 
+<mainClass>pe.edu.upeu.ProyectoGUI.ExamenJava</mainClass> 
 </manifest>
 </archive>
 </configuration>
