@@ -53,7 +53,7 @@ public class ResolucionExamen {
 
     public void ejer4() {
         int i, j, suma, sec = 0;
-        System.out.println("Ingrese cuantos numeros perfectos desea ver (dentro del rango): ");
+        System.out.println("Ingrese cuantos numeros perfectos desea ver : ");
         int canti = lt.nextInt();
         System.out.println("Los numero perfectos son: ");
         for (i = 1; i > 0; i++) {

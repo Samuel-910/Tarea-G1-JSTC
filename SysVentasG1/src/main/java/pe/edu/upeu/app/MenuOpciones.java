@@ -2,6 +2,12 @@ package pe.edu.upeu.app;
 
 import java.io.Console;
 
+import pe.edu.upeu.dao.CategoriDao;
+import pe.edu.upeu.dao.ClienteDao;
+import pe.edu.upeu.dao.ModeloDao;
+import pe.edu.upeu.dao.ProductoDao;
+import pe.edu.upeu.dao.UsuarioDao;
+import pe.edu.upeu.dao.VentasDao;
 import pe.edu.upeu.modelo.UsuarioTO;
 import pe.edu.upeu.util.LeerTeclado;
 
@@ -17,8 +23,7 @@ public class MenuOpciones {
         System.out.println("Ingrese su clave:");
         char[] clavex=cons.readPassword();
         user.setClave(String.valueOf(clavex));
-        if (user.getUsuario().equals("davidmp") && 
-        user.getClave().equals("123456")) {
+        if (new UsuarioDao().loginValidar(user.getUsuario(), user.getClave())) {
             menuPrincial();
         }else{
             System.out.println("Intente Otra vez!");
@@ -28,13 +33,17 @@ public class MenuOpciones {
 
     public void menuPrincial() {
         System.out.println("********************Bienvenidos al Sistema de Ventas******************");
-        String valorX="1=Registrar Producto\n"+"2=Registrar cliente\n"+
-                "3=Registrar Venta\n";
-        int opciones=1;
+        String valorX="1=Registrar Usuario\n"+"2=Registrar Categoria\n"+
+                "3=Registrar cliente\n4=Registrar Modelo\n5=Crear Producto\n6=Ventas";
+        int opciones=0;
         do {
             switch (opciones) {
-                case 1: System.out.println("Registrando producto"); break;
-                case 2: System.out.println("clientes"); break;
+                case 1: new UsuarioDao().crearUsuario(); break;
+                case 2: new CategoriDao().crearCategoria(); break;
+                case 3: new ClienteDao().crearCliente();break;
+                case 4: new ModeloDao().crearModelo();break;
+                case 5: new ProductoDao().crearProducto();break;
+                case 6: new VentasDao().registroVentaGeneral();break;
                 default: System.out.println("Opcion erronea!"); break;
             }
             char continuar=leerT.leer("", "Desea continuar? S=si/N=no")
